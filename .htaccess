@@ -1,0 +1,20 @@
+#ANTI MALING GAMBAR
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?localhost [NC] #Ini jika Masih menggunakan XAMPP, Ganti dengan domain anda
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google.co.id [NC] #Ini situs yang bisa mengakses Gambar Anda
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?facebook.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?twitter.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+
+#MENYEMBUNYIKAN EKSTENSI PHP/HTML/HTM PADA URL
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f [NC]
+RewriteRule ^(.*)$ $1.php [L,QSA]
+RewriteCond %{REQUEST_FILENAME}.htm -f [NC]
+RewriteRule ^(.*)$ $1.htm [L,QSA]
+RewriteCond %{REQUEST_FILENAME}.html -f [NC]
+RewriteRule ^(.*)$ $1.html [L,QSA]

@@ -1,0 +1,55 @@
+@media (min-width: 1200px) {
+	#nav .dropdown:hover .dropdown-menu {
+		display: block;
+		-webkit-animation: lightSpeedIn 400ms;
+		animation: lightSpeedIn 400ms;
+	}
+
+	.f-nav {
+		position: fixed;
+		width: auto;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		background: #FFFF55;
+		padding: 0 5% 0 5%;
+		border-radius: 0 0 4px 4px;
+		-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+		-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#nav .dropdown:hover .dropdown-menu {
+		display: block;
+		-webkit-animation: lightSpeedIn 400ms;
+		animation: lightSpeedIn 400ms;
+	}
+
+	.f-nav {
+		position: fixed;
+		width: auto;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		background: #FFFF55;
+		padding: 0 5% 0 5%;
+		border-radius: 0 0 4px 4px;
+		-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+		-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+	}	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
